@@ -1,15 +1,15 @@
 document.querySelector('#clickMe').addEventListener('click', get)
 document.querySelector('#reset').addEventListener('click', reset)
 
-const data = {}
+let data = {}
 
 async function get() {
     const char = document.querySelector('#search').value
     try {
         const response = await fetch(`https://simple-ps-chars-api.cyclic.app/api/${char}`)
         data = await response.json()
-        await populate()
-        await unhide()
+        .then (populate())
+        .then (unhide())
     } catch(error) {
         console.error(error)
     }

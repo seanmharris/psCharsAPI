@@ -208,6 +208,7 @@ const characters = {
 
 app.use(express.static('public'))
 app.use(cors())
+app.use(express.json())
 
 app.get('/', (req, res) => {
     res.sendFile(__dirname + '/index.html')
