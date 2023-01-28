@@ -1,36 +1,29 @@
 document.querySelector('#clickMe').addEventListener('click', get)
 document.querySelector('#reset').addEventListener('click', reset)
 
-let data = {}
+
 
 async function get() {
     const char = document.querySelector('#search').value
     try {
         const response = await fetch(`https://simple-ps-chars-api.cyclic.app/api/${char}`)
-        data = await response.json()
-        .then (populate())
-        .then (unhide())
+        const data = await response.json()
+            document.querySelector('#name').innerText = data['name']
+            if(data['altName']) document.querySelector('#altNames').innerText = `AKA: "${data['altName']}"`
+            document.querySelector('#debutYear').innerText = `Debuted in: ${data['debutYear']}`
+            document.querySelector('#firstGame').innerText = `Origin: ${data['firstGame']}`
+            document.querySelector('#latestMainGame').innerText = `Most recent main game/appearance: ${data['latestMainGame']}`
+            document.querySelector('#originalDev').innerText = `Created by (developer/studio): ${data['originDev']}`
+            document.querySelector('#name').classList.remove('hidden')
+            if(data['altName']) document.querySelector('#altNames').classList.remove('hidden')
+            document.querySelector('#debutYear').classList.remove('hidden')
+            document.querySelector('#firstGame').classList.remove('hidden')
+            document.querySelector('#latestMainGame').classList.remove('hidden')
+            document.querySelector('#originalDev').classList.remove('hidden')
+            document.querySelector('#reset').classList.remove('hidden')
     } catch(error) {
         console.error(error)
     }
-}
-
-function populate() {
-    document.querySelector('#name').innerText = data['name']
-    if(data['altName']) document.querySelector('#altNames').innerText = `AKA: "${data['altName']}"`
-    document.querySelector('#debutYear').innerText = `Debuted in: ${data['debutYear']}`
-    document.querySelector('#firstGame').innerText = `Origin: ${data['firstGame']}`
-    document.querySelector('#latestMainGame').innerText = `Most recent main game/appearance: ${data['latestMainGame']}`
-    document.querySelector('#originalDev').innerText = `Created by (developer/studio): ${data['originDev']}`
-}
-function unhide() {
-    document.querySelector('#name').classList.remove('hidden')
-    if(data['altName']) document.querySelector('#altNames').classList.remove('hidden')
-    document.querySelector('#debutYear').classList.remove('hidden')
-    document.querySelector('#firstGame').classList.remove('hidden')
-    document.querySelector('#latestMainGame').classList.remove('hidden')
-    document.querySelector('#originalDev').classList.remove('hidden')
-    document.querySelector('#reset').classList.remove('hidden')
 }
 
 function reset() {
