@@ -6,7 +6,7 @@ const data = {}
 async function get() {
     const char = document.querySelector('#search').value
     try {
-        const response = await fetch(/*PUT HEROKU API HERE*/`/api/${char}`)
+        const response = await fetch(/*PUT CLOUD HOST HERE*/`/api/${char}`)
         data = await response.json()
         populate()
         unhide()

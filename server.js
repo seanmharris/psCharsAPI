@@ -4,6 +4,7 @@ const app = express()
 const cors = require('cors')
 const PORT = 8000
 
+//lots of data hardcoded here rather than using a db
 const characters = {
     'crashbandicoot': {
         'name' : 'Crash Bandicoot',
@@ -203,6 +204,7 @@ const characters = {
         'name': 'No info for requested character'
     }
 }
+// data over
 
 app.use(express.static('public'))
 app.use(cors())
