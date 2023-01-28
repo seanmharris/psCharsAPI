@@ -28,13 +28,13 @@ async function get() {
 
 function reset() {
     document.querySelector('#name').innerText = ''
-    if(data['altName']) document.querySelector('#altNames').innerText = ''
+    document.querySelector('#altNames').innerText = ''
     document.querySelector('#debutYear').innerText = ''
     document.querySelector('#firstGame').innerText = ''
     document.querySelector('#latestMainGame').innerText = ''
     document.querySelector('#originalDev').innerText = ''
     document.querySelector('#name').classList.add('hidden')
-    if(data['altName']) document.querySelector('#altNames').classList.add('hidden')
+    document.querySelector('#altNames').classList.add('hidden')
     document.querySelector('#debutYear').classList.add('hidden')
     document.querySelector('#firstGame').classList.add('hidden')
     document.querySelector('#latestMainGame').classList.add('hidden')
