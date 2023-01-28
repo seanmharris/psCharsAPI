@@ -15,16 +15,14 @@ const characters = {
         
     },
     'kratos': {
-        'name' : 'Kratos',
-        'altName': 'Ghost of Sparta',
+        'name' : 'Kratos, Ghost of Sparta',
         'debutYear': 2005,
         'firstGame': 'God of War',
         'latestMainGame': "God of War Ragnarok",
         'originDev': 'Santa Monica Studio'
     },
     'atreus': {
-        'name' : 'Atreus',
-        'altName': 'Loki, BOY',
+        'name' : 'Atreus, Loki, BOY',
         'debutYear': 2018,
         'firstGame': 'God of War (2018)',
         'latestMainGame': "God of War Ragnarok",
@@ -52,32 +50,28 @@ const characters = {
         'originDev': 'Media Molecule'
     },
     'solidsnake': {
-        'name' : 'Solid Snake',
-        'altName': 'David',
+        'name' : 'Solid Snake, David, Iroquois Pliskin, Old Snake',
         'debutYear': 1998,
         'firstGame': 'Metal Gear Solid',
         'latestMainGame': "Metal Gear Solid 4: Guns of the Patriots",
         'originDev': 'Konami (Kojima Productions)'
     },
     'cloudstrife': {
-        'name' : 'Cloud Strife',
-        'altName': 'Ex-SOLDIER',
+        'name' : 'Cloud Strife, Ex-SOLDIER',
         'debutYear': 1997,
         'firstGame': 'Final Fantasy VII',
         'latestMainGame': "Crisis Core: Final Fantasy VII Reunion",
         'originDev': 'Squaresoft'
     },
     'cloud': {
-        'name' : 'Cloud Strife',
-        'altName': 'Ex-SOLDIER',
+        'name' : 'Cloud Strife, Ex-SOLDIER',
         'debutYear': 1997,
         'firstGame': 'Final Fantasy VII',
         'latestMainGame': "Crisis Core: Final Fantasy VII Reunion",
         'originDev': 'Squaresoft'
     },
     'abe': {
-        'name' : 'Abraham Lure',
-        'altName': 'Abe',
+        'name' : 'Abraham Lure, Abe',
         'debutYear': 1997,
         'firstGame': "Oddworld: Abe's Oddysee",
         'latestMainGame': "Oddworld: Soulstorm",
@@ -133,40 +127,35 @@ const characters = {
         'originDev': 'Naughty Dog'
     },
     'elliewilliams': {
-        'name' : 'Ellie Williams',
-        'altName': 'Kiddo, Baby girl',
+        'name' : 'Ellie Williams, Kiddo, Baby girl',
         'debutYear': 2013,
         'firstGame': 'The Last of Us',
         'latestMainGame': "The Last of Us Part II",
         'originDev': 'Naughty Dog'
     },
     'ellie': {
-        'name' : 'Ellie Williams',
-        'altName': 'Kiddo, Baby girl',
+        'name' : 'Ellie Williams, Kiddo, Baby girl',
         'debutYear': 2013,
         'firstGame': 'The Last of Us',
         'latestMainGame': "The Last of Us Part II",
         'originDev': 'Naughty Dog'
     },
     'nathandrake': {
-        'name' : 'Nathan Drake',
-        'altName': 'Drake',
+        'name' : 'Nathan Drake, Drake',
         'debutYear': 2007,
         'firstGame': "Uncharted: Drake's Fortune",
         'latestMainGame': "Uncharted 4: A Thief's End",
         'originDev': 'Naughty Dog'
     },
     'drake': {
-        'name' : 'Nathan Drake',
-        'altName': 'Drake',
+        'name' : 'Nathan Drake, Drake',
         'debutYear': 2007,
         'firstGame': "Uncharted: Drake's Fortune",
         'latestMainGame': "Uncharted 4: A Thief's End",
         'originDev': 'Naughty Dog'
     },
     'nathan': {
-        'name' : 'Nathan Drake',
-        'altName': 'Drake',
+        'name' : 'Nathan Drake, Drake',
         'debutYear': 2007,
         'firstGame': "Uncharted: Drake's Fortune",
         'latestMainGame': "Uncharted 4: A Thief's End",
