@@ -8,8 +8,8 @@ async function get() {
     try {
         const response = await fetch(`https://simple-ps-chars-api.cyclic.app/api/${char}`)
         data = await response.json()
-        populate()
-        unhide()
+        await populate()
+        await unhide()
     } catch(error) {
         console.error(error)
     }
