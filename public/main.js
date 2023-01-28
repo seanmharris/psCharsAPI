@@ -6,7 +6,7 @@ const data = {}
 async function get() {
     const char = document.querySelector('#search').value
     try {
-        const response = await fetch(/*PUT CLOUD HOST HERE*/`/api/${char}`)
+        const response = await fetch(`https://simple-ps-chars-api.cyclic.app/api/${char}`)
         data = await response.json()
         populate()
         unhide()
